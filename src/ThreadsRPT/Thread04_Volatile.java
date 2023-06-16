@@ -1,4 +1,4 @@
-package Threads;
+package ThreadsRPT;
 
 public class Thread04_Volatile {
 
@@ -24,11 +24,12 @@ public class Thread04_Volatile {
         Thread thread2 = new Thread(new Runnable() {
             @Override
             public void run() {
-                try {Thread.sleep(10);} catch (InterruptedException e) {throw new RuntimeException(e);}
+                //try {Thread.sleep(10);} catch (InterruptedException e) {throw new RuntimeException(e);}
                 flag = 1;
                 System.out.println("Flag is now set to 1.");
             }
         });
+        //thread1.start();
         thread2.start();
 
     }
