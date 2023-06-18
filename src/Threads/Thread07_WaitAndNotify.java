@@ -24,7 +24,7 @@ public class Thread07_WaitAndNotify {
                 } catch (InterruptedException e) {
                     throw new RuntimeException(e);
                 }
-                obj.deposit(500);
+                obj.deposit(50);
             }
         });
         thread2.setName("Father");
