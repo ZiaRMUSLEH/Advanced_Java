@@ -47,7 +47,7 @@ public class Thread02_Synchronization {
 
 class Counter{
 
-    public synchronized static void count(){
+    public  static void count(){
         for(int i =1; i<=1000; i++ ){
             Thread02_Synchronization.counter++;
         }
