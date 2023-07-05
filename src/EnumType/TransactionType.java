@@ -9,7 +9,7 @@ public enum TransactionType {
 
     private final int transactionCode;
 
-    private TransactionType (int transactionCode) {
+   TransactionType (int transactionCode) {
         this.transactionCode = transactionCode;
     }
 

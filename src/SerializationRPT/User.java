@@ -3,25 +3,23 @@ package SerializationRPT;
 import java.io.Serializable;
 
 public class User implements Serializable {
-
-    private long id;
-
     private String name;
+    private int id;
+    private int age;
 
-    private String schoolNum;
-
-    public User (long id, String name, String schoolNum) {
-        this.id = id;
+    public User (String name, int id, int age) {
         this.name = name;
-        this.schoolNum = schoolNum;
-    }
-
-    public long getId () {
-        return id;
-    }
-
-    public void setId (long id) {
         this.id = id;
+        this.age = age;
+    }
+
+    @Override
+    public String toString () {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", age=" + age +
+                '}';
     }
 
     public String getName () {
@@ -32,20 +30,19 @@ public class User implements Serializable {
         this.name = name;
     }
 
-    public String getSchoolNum () {
-        return schoolNum;
+    public int getId () {
+        return id;
     }
 
-    public void setSchoolNum (String schoolNum) {
-        this.schoolNum = schoolNum;
+    public void setId (int id) {
+        this.id = id;
     }
 
-    @Override
-    public String toString () {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", schoolNum='" + schoolNum + '\'' +
-                '}';
+    public int getAge () {
+        return age;
+    }
+
+    public void setAge (int age) {
+        this.age = age;
     }
 }

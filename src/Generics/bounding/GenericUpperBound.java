@@ -20,6 +20,8 @@ public class GenericUpperBound <T extends Number>{
 
         double avg = sum/numberArray.length;
         return avg;
+
+
     }
 
     public static void main(String[] args) {
